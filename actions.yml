@@ -12,5 +12,5 @@ outputs:
 runs:
   using: 'docker'
   image: 'Dockerfile'
-  args:                           # docker run に渡すパラメータ
-    - $
+  args:
+    - ${{ inputs.who-to-greet }}
